@@ -32,6 +32,13 @@ class MyScaffold extends StatelessWidget {
         ],
       ),
       backgroundColor: Colors.red.shade100,
+      bottomNavigationBar: BottomNavigationBar(items: [
+        BottomNavigationBarItem(icon: Icon(Icons.exit_to_app),title: Text("Exit")),
+        BottomNavigationBarItem(icon: Icon(Icons.account_box),title: Text("MY ACCOUNT")),
+        BottomNavigationBarItem(icon: Icon(Icons.switch_account),title: Text("Switch Account"))
+
+      ], onTap: (int i)=>print(i+1),),
+
       body: Center(
           child:Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
