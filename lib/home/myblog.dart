@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_first_app/App/ProfileCard.dart';
 import 'myScaffold.dart';
 class MyBlog extends StatelessWidget {
   const MyBlog({Key? key}) : super(key: key);
@@ -6,7 +7,8 @@ class MyBlog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyScaffold(),
+      title: "ProfileCard",
+      home: ProfileCard(),
     );
   }
 }

@@ -1,6 +1,7 @@
 
 import'package:flutter_first_app/home/myblog.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_first_app/App/ProfileCard.dart';
 
 void main() => runApp(MyBlog()); // excecution start
 

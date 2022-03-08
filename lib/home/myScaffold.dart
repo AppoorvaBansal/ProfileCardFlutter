@@ -14,6 +14,8 @@ class MyScaffold extends StatelessWidget {
     print("CLICKEDDDDD>>>>>>");
   }
 
+  final iconemail=Icons.email_outlined;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,10 +28,23 @@ class MyScaffold extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amberAccent,
         actions: <Widget>[
-          IconButton(onPressed: ()=>print("EMAIL"), icon: Icon(Icons.email)),
+          IconButton(onPressed: ()=>print("EMAIL"), icon: Icon(iconemail)),
           IconButton(onPressed: fun_setting, icon: Icon(Icons.settings)),
-          IconButton(onPressed: ()=>null, icon: Icon(Icons.menu))
+          IconButton(onPressed: (){
+
+
+          }, icon: Icon(Icons.menu))
         ],
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: ()=>null,
+        backgroundColor: Colors.red,
+        foregroundColor: Colors.white,
+        hoverColor: Colors.lightGreen,
+        child: Icon(Icons.add),
+
+
       ),
       backgroundColor: Colors.red.shade100,
       bottomNavigationBar: BottomNavigationBar(items: [
@@ -37,7 +52,9 @@ class MyScaffold extends StatelessWidget {
         BottomNavigationBarItem(icon: Icon(Icons.account_box),title: Text("MY ACCOUNT")),
         BottomNavigationBarItem(icon: Icon(Icons.switch_account),title: Text("Switch Account"))
 
-      ], onTap: (int i)=>print(i+1),),
+      ],
+        backgroundColor: Colors.red,
+        onTap: (int i)=>print(i+1),),
 
       body: Center(
           child:Column(
@@ -56,7 +73,7 @@ class MyScaffold extends StatelessWidget {
               onTap:funInkWell ,
 
               ),
-CustomButtonShow()
+                CustomButtonShow()
             ],
           )
 
