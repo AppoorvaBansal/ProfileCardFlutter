@@ -48,9 +48,9 @@ class MyScaffold extends StatelessWidget {
       ),
       backgroundColor: Colors.red.shade100,
       bottomNavigationBar: BottomNavigationBar(items: [
-        BottomNavigationBarItem(icon: Icon(Icons.exit_to_app),title: Text("Exit")),
-        BottomNavigationBarItem(icon: Icon(Icons.account_box),title: Text("MY ACCOUNT")),
-        BottomNavigationBarItem(icon: Icon(Icons.switch_account),title: Text("Switch Account"))
+        BottomNavigationBarItem(icon: Icon(Icons.exit_to_app)),
+        BottomNavigationBarItem(icon: Icon(Icons.account_box)),
+        BottomNavigationBarItem(icon: Icon(Icons.switch_account))
 
       ],
         backgroundColor: Colors.red,

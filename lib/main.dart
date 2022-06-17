@@ -6,15 +6,6 @@ import 'package:flutter_first_app/App/ProfileCard.dart';
 void main() => runApp(MyBlog()); // excecution start
 
 
-
-
-
-
-
-
-
-
-
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
